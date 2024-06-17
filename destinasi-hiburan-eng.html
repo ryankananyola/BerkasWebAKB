@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Bar & Lounge</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage-eng.html">Enjoy Indonesia</a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="destinasi-alam-eng.html" class="dropbtn-eng"
+                >PLACE TO GO</a
+              >
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam-eng.html">
+                  <img
+                    src="image/pohonfix.png"
+                    alt="Nature Destinations"
+                    class="dropdown-icon"
+                  />
+                  Nature
+                </a>
+                <a href="destinasi-sejarah-eng.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Historical Destinations"
+                    class="dropdown-icon"
+                  />
+                  History
+                </a>
+                <a href="destinasi-belanja-eng.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Shopping Destinations"
+                    class="dropdown-icon"
+                  />
+                  Shopping
+                </a>
+                <a href="destinasi-hiburan-eng.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Entertainment Destinations"
+                    class="dropdown-icon"
+                  />
+                  Entertainment
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional-eng.html" class="dropbtn-eng"
+                >EAT & DRINK</a
+              >
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional-eng.html">
+                  <img
+                    src="image/tradisionalfix.png"
+                    alt="Traditional Foods"
+                    class="dropdown-icon"
+                  />
+                  Traditional Foods
+                </a>
+                <a href="kuliner-restoran-eng.html">
+                  <img
+                    src="image/restoranfix.png"
+                    alt="Restaurants"
+                    class="dropdown-icon"
+                  />
+                  Restaurants
+                </a>
+                <a href="kuliner-streetfood-eng.html">
+                  <img
+                    src="image/streetfoodfix.png"
+                    alt="Street Foods"
+                    class="dropdown-icon"
+                  />
+                  Street Foods
+                </a>
+                <a href="kuliner-bar-eng.html">
+                  <img
+                    src="image/barfix.png"
+                    alt="Bars & Lounges"
+                    class="dropdown-icon"
+                  />
+                  Bars & Lounges
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel-eng.html" class="dropbtn-eng"
+                >WAY TO GO</a
+              >
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel-eng.html">Accommodation</a>
+                <!-- Submenu for Accommodation options -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse-eng.html">
+                    <img
+                      src="image/penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel-eng.html">
+                    <img
+                      src="image/hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse-eng.html">
+                    <img
+                      src="image/guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Welcome to Indonesia</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Scroll down
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Follow Us</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\eng.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          EN <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="destinasi-alam.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="destinasi-alam-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/destinasi-dufan.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Dufan</div>
+            <div class="home__content">
+              <a class="see-button" href="#about1"><button>See More</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/destinasi-jatimpark1.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Jatim Park 1</div>
+            <div class="home__content">
+              <a href="#about2"><button>See More</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/destinasi-museumangkut.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Museum Angkut</div>
+            <div class="home__content">
+
+              <a href="#about3"><button>See More</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/destinasi-safari.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Bogor Safari Park</div>
+            <div class="home__content">
+
+              <a href="#about4"><button>See More</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/destinasi-transstudio.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Trans Studio Bandung</div>
+            <div class="home__content">
+
+              <a href="#about5"><button>See More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>Dufan</h1>
+            </div>
+            <div class="text">
+              <p>
+                Dufan, or Dunia Fantasi, is the largest amusement park in Indonesia located in Ancol, North Jakarta. Covering an area of ​​more than 50 hectares, Dufan offers a variety of rides, attractions, and shows suitable for all ages. From thrilling roller coasters to refreshing water rides, Dufan has something for everyone. In addition, the park also has a special zone for young children, interactive play areas, and entertaining shows. With its lively and colorful atmosphere, Dufan is one of Jakarta's favorite tourist destinations for families and friends.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/destinasi-dufan.webp" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0400536322336!2d106.83096277474974!3d-6.1253123938614085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e1a80420c57%3A0x275b93253d2232e3!2sDunia%20Fantasi!5e0!3m2!1sid!2sid!4v1715348769573!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about2">
+            <div class="heading">
+              <h1>Jatim Park 1</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Jatim Park 1 is a recreational park located in Batu City, East Java, Indonesia. This place is known for combining amusement rides, theme parks, and nature education. Visitors can enjoy various attractions such as amusement rides, interactive museums, and mini zoos. Jatim Park 1 also offers education on various subjects, including science and nature, through entertaining and educational exhibitions for visitors of all ages.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/destinasi-jatimpark1.webp" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.0520982975265!2d112.52363028852831!3d-7.884166298034602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7880d52e0379d9%3A0x9c94d817cc2686bb!2sJatim%20Park%20I%2C%20Jl.%20Dewi%20Sartika%20Atas%2C%20Sisir%2C%20Kec.%20Batu%2C%20Kota%20Batu%2C%20Jawa%20Timur%2065314!5e0!3m2!1sid!2sid!4v1715348835488!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about3">
+            <div class="heading">
+              <h1>Transportation Museum</h1>
+            </div>
+            <div class="text">
+              <p>
+                Transportation Museum or Museum Angkut is located in Batu City, East Java, Indonesia. This museum is unique because it combines transportation collections from various eras, from horse-drawn carriages to modern cars. Visitors can find interesting replicas of world landmarks, such as the Eiffel Tower and the Taj Mahal, and enjoy interactive rides and shows. The Transportation Museum is suitable for all ages and is a popular tourist destination in Indonesia.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/destinasi-museumangkut.webp" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.155352055824!2d112.51739977476699!3d-7.878808992143563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78872dd3cd2c13%3A0x3295038cd23c1d38!2sMuseum%20Angkut!5e0!3m2!1sid!2sid!4v1715348907583!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about4">
+            <div class="heading">
+              <h1>Bogor Safari Park</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Bogor Safari Park is a safari park located in Cisarua, Bogor, Indonesia. This park is famous for offering a unique experience of seeing wild animals from various parts of the world in semi-natural habitats. Visitors can explore this park by car or safari bus, and interact directly with some visitor-friendly animals in certain areas. In addition, the park also offers various other attractions such as animal shows, amusement rides, and educational conservation areas.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/destinasi-safari.webp" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4024326759277!2d106.94826057475521!3d-6.720649193275308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69b5cf14e6ee83%3A0x6586bb20b8f11d9!2sTaman%20Safari%20Indonesia%20Bogor!5e0!3m2!1sid!2sid!4v1715348965695!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about5">
+            <div class="heading">
+              <h1>Trans Studio Bandung</h1>
+            </div>
+            <div class="text">
+              <p>
+                Trans Studio Bandung is an indoor amusement park located in Bandung, West Java, Indonesia. Famous as one of the largest amusement parks in Southeast Asia, Trans Studio Bandung offers various exciting attractions and rides, including amusement rides, shows, and interactive events that entertain people of all ages. With its captivating theme and innovative concept, this place has become a popular destination for both local and international tourists.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/destinasi-transstudio.webp" alt="" />
+          </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7072590175662!2d107.633668174757!3d-6.925553793074196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d87c2b519b%3A0x4d60c5efa75acded!2sTrans%20Studio%20Bandung!5e0!3m2!1sid!2sid!4v1715349023991!5m2!1sid!2sid" width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#home">Enjoy Indonesia</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kemenparekraf?_t=8lssPVuUJim&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Place to Go</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam-eng.html">Nature</a></li>
+            <li><a href="destinasi-belanja-eng.html">Shopping</a></li>
+            <li><a href="destinasi-sejarah-eng.html">History</a></li>
+            <li><a href="destinasi-hiburan-eng.html">Entertainment</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Eat & Drink</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="kuliner-tradisional-eng.html">Traditional Foods</a>
+            </li>
+            <li><a href="kuliner-restoran-eng.html">Restaurants</a></li>
+            <li><a href="kuliner-streetfood-eng.html">Street Foods</a></li>
+            <li><a href="kuliner-bar-eng.html">Bars & Lounges</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Way to Go</h3>
+          <ul class="footer__links">
+            <li><a href="akomodasi-hotel-eng.html">Accommodation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      src="scriptDisplay.js"
+    ></script>
+  </body>
+</html>

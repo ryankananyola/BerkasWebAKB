@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Bar & Lounge</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage.html"> Enjoy Indonesia </a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">DESTINASI</a>
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam.html">
+                  <img
+                    src="image\pohonfix.png"
+                    alt="Destinasi Alam"
+                    class="dropdown-icon"
+                  />
+                  Alam
+                </a>
+                <a href="destinasi-sejarah.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Destinasi Sejarah"
+                    class="dropdown-icon"
+                  />
+                  Sejarah
+                </a>
+                <a href="destinasi-belanja.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Destinasi Belanja"
+                    class="dropdown-icon"
+                  />
+                  Belanja
+                </a>
+                <a href="destinasi-hiburan.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Destinasi Hiburan"
+                    class="dropdown-icon"
+                  />
+                  Hiburan
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional.html" class="dropbtn">KULINER</a>
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional.html">
+                  <img
+                    src="image\tradisionalfix.png"
+                    alt="Makanan Tradisional"
+                    class="dropdown-icon"
+                  />
+                  Makanan Tradisional
+                </a>
+                <a href="kuliner-restoran.html">
+                  <img
+                    src="image\restoranfix.png"
+                    alt="Restoran"
+                    class="dropdown-icon"
+                  />
+                  Restoran
+                </a>
+                <a href="kuliner-streetfood.html">
+                  <img
+                    src="image\streetfoodfix.png"
+                    alt="Streetfood"
+                    class="dropdown-icon"
+                  />
+                  Streetfood
+                </a>
+                <a href="kuliner-bar.html">
+                  <img
+                    src="image\barfix.png"
+                    alt="Bar & Lounge"
+                    class="dropdown-icon"
+                  />
+                  Bar & Lounge
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">AKOMODASI</a>
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel.html">Tempat Tinggal</a>
+                <!-- Submenu untuk opsi Hotel -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse.html">
+                    <img
+                      src="image\penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel.html">
+                    <img
+                      src="image\hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse.html">
+                    <img
+                      src="image\guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Selamat Datang</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Gulir kebawah
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Ikuti Kami</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\id.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          ID <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="homepage.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="homepage-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div
+          class="itemmelodic"
+          style="
+            background-image: url(image-kuliner/MakananTradisional/rendang);
+          "
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Rendang</div>
+            <div class="home__content">
+              <a href="#about1"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/MakananTradisional/gudeG)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Gudeg</div>
+            <div class="home__content">
+              <a href="#about2"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/MakananTradisional/Rawon)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Rawon</div>
+            <a href="#about3"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/MakananTradisional/pempek)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Pempek</div>
+            <a href="#about4"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="
+            background-image: url(image-kuliner/MakananTradisional/ayamTaliwang.webp);
+          "
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Ayam Taliwang</div>
+            <a href="#about5"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>Rendang</h1>
+            </div>
+            <div class="text">
+              <p>
+                Rendang adalah hidangan berbahan dasar daging yang dihasilkan
+                dari proses memasak suhu rendah dalam waktu lama dengan
+                menggunakan aneka rempah-rempah dan santan. Proses memasaknya
+                memakan waktu berjam-jam hingga yang tinggal hanyalah potongan
+                daging berwarna hitam pekat dan dedak.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/MakananTradisional/rendang" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255314.42859771533!2d100.22645427411925!3d-0.9342364143323149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b942e2b117bb%3A0xb8468cb5c3046ba5!2sPadang%2C%20Kota%20Padang%2C%20Sumatera%20Barat!5e0!3m2!1sid!2sid!4v1714307601136!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about2">
+            <div class="heading">
+              <h1>Gudeg</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Gudeg adalah hidangan khas Daerah Istimewa Yogyakarta yang
+                terbuat dari nangka muda yang dimasak dengan santan. Perlu waktu
+                berjam-jam untuk membuat hidangan gudeg. Warna cokelat biasanya
+                dihasilkan oleh daun jati yang dimasak bersamaan. Gudeg biasanya
+                dimakan dengan nasi dan disajikan dengan kuah santan kental
+                (areh), ayam kampung, telur, tempe, tahu, dan sambal goreng
+                krecek.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/MakananTradisional/gudeG" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.983719476455!2d110.33364495877125!3d-7.803163418921152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1714307654624!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about3">
+            <div class="heading">
+              <h1>Rawon</h1>
+            </div>
+            <div class="text">
+              <p>
+                Rawon adalah masakan khas Indonesia yang berasal dari Ponorogo,
+                Jawa Timur, yang berupa sup daging berkuah hitam dengan campuran
+                bumbu khas yang menggunakan kluwek. Makanan ini telah berusia
+                lebih dari 1.000 tahun. Rawon dari Ponorogo menyebar ke penjuru
+                Jawa Timur dan dikenal sebagai masakan khas Jawa Timur.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/MakananTradisional/Rawon" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.25766531323!2d112.63028122365778!3d-7.27544171644892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1714307739976!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about4">
+            <div class="heading">
+              <h1>Pempek</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Pempek, mpek-mpek, atau dalam bahasa Indonesia gaul empek-empek,
+                adalah makanan khas Palembang, Sumatera Selatan. Proses
+                pembuatannya yakni dibuat dari daging ikan yang digiling lembut,
+                dicampur tepung kanji atau tepung sagu, serta dengan penambahan
+                komposisi bahan lain seperti telur, bawang putih yang
+                dihaluskan, penyedap rasa, dan garam. Pempek biasanya disajikan
+                dengan kuah yang disebut cuko yang memiliki rasa asam, manis,
+                dan pedas.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/MakananTradisional/pempek" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.4455401208!2d104.68056196961886!3d-2.954794055626702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1714307699378!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about5">
+            <div class="heading">
+              <h1>Ayam Taliwang</h1>
+            </div>
+            <div class="text">
+              <p>
+                Ayam Taliwang adalah makanan khas yang berasal dari Taliwang,
+                Sumbawa Barat, Nusa Tenggara Barat. Makanan ini berbahan dasar
+                daging ayam. Daging ayam yang disajikan berasal dari ayam
+                kampung muda yang dibakar kemudian dibumbui dengan semacam saus
+                yang bahannya antara lain cabai merah kering, bawang merah,
+                bawang putih, tomat, terasi goreng, kencur, gula merah, dan
+                garam. Makanan ini biasanya disajikan bersama makanan khas
+                Lombok yang lain, misalnya plecing kangkung.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img
+              src="image-kuliner/MakananTradisional/ayamTaliwang.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504685.83057904994!2d116.553542829293!3d-8.79940387772207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc617b3a12b729%3A0x170fc4bb9a5645e!2sKabupaten%20Sumbawa%20Barat%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1714308096209!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">Jogja</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/jogjaku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://x.com/Jogja24Jam?t=Zz5YdWcZUpRdTkeApib7eQ&s=08"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@jogjakuofficial?_t=8kQTI8UQvP0&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Destinasi</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam.html">Alam</a></li>
+            <li><a href="destinasi-belanja.html">Belanja</a></li>
+            <li><a href="destinasi-sejarah.html">Sejarah</a></li>
+            <li><a href="destinasi-hiburan.html">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Kuliner</h3>
+          <ul class="footer__links">
+            <li><a href="makanantradisional.html">Makanan Tradisional</a></li>
+            <li><a href="restoran.html">Restoran & Cafe</a></li>
+            <li><a href="streetfood.html">Streetfood</a></li>
+            <li><a href="streetfood.html">Bar & Lounge</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Akomodasi</h3>
+          <ul class="footer__links">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="transportasi.html">Transportasi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      src="scriptDisplay.js"
+    ></script>
+  </body>
+</html>

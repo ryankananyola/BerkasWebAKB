@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Bar & Lounge</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage.html"> Enjoy Indonesia </a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">DESTINASI</a>
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam.html">
+                  <img
+                    src="image\pohonfix.png"
+                    alt="Destinasi Alam"
+                    class="dropdown-icon"
+                  />
+                  Alam
+                </a>
+                <a href="destinasi-sejarah.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Destinasi Sejarah"
+                    class="dropdown-icon"
+                  />
+                  Sejarah
+                </a>
+                <a href="destinasi-belanja.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Destinasi Belanja"
+                    class="dropdown-icon"
+                  />
+                  Belanja
+                </a>
+                <a href="destinasi-hiburan.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Destinasi Hiburan"
+                    class="dropdown-icon"
+                  />
+                  Hiburan
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional.html" class="dropbtn">KULINER</a>
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional.html">
+                  <img
+                    src="image\tradisionalfix.png"
+                    alt="Makanan Tradisional"
+                    class="dropdown-icon"
+                  />
+                  Makanan Tradisional
+                </a>
+                <a href="kuliner-restoran.html">
+                  <img
+                    src="image\restoranfix.png"
+                    alt="Restoran"
+                    class="dropdown-icon"
+                  />
+                  Restoran
+                </a>
+                <a href="kuliner-streetfood.html">
+                  <img
+                    src="image\streetfoodfix.png"
+                    alt="Streetfood"
+                    class="dropdown-icon"
+                  />
+                  Streetfood
+                </a>
+                <a href="kuliner-bar.html">
+                  <img
+                    src="image\barfix.png"
+                    alt="Bar & Lounge"
+                    class="dropdown-icon"
+                  />
+                  Bar & Lounge
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">AKOMODASI</a>
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel.html">Tempat Tinggal</a>
+                <!-- Submenu untuk opsi Hotel -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse.html">
+                    <img
+                      src="image\penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel.html">
+                    <img
+                      src="image\hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse.html">
+                    <img
+                      src="image\guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Selamat Datang</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Gulir kebawah
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Ikuti Kami</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\id.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          ID <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="homepage.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="homepage-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/StreetFood/kerakTelor.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Kerak Telur</div>
+            <div class="home__content">
+              <a href="#about1"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="
+            background-image: url(image-kuliner/StreetFood/cilokBandung.jpg);
+          "
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Cilok Bandung</div>
+            <div class="home__content">
+              <a href="#about2"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/StreetFood/bakwanKawi.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Bakwan Kawi</div>
+            <a href="#about3"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/StreetFood/serabiSolo.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Serabi Solo</div>
+            <a href="#about4"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="
+            background-image: url(image-kuliner/StreetFood/wedangRonde.webp);
+          "
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Wedang Ronde</div>
+            <a href="#about5"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>Kerak Telur, Jakarta</h1>
+            </div>
+            <div class="text">
+              <p>
+                Kerak telur adalah makanan asli daerah Jakarta (Betawi), dengan
+                bahan-bahan beras ketan putih, telur ayam atau bebek, ebi (udang
+                kering yang diasinkan), ditambah bawang merah goreng, lalu
+                diberi bumbu yang dihaluskan berupa kelapa sangrai, cabai merah,
+                kencur, jahe, kunyit,sereh halus, merica butiran, garam dan gula
+                pasir. Kerak telor dapat ditemukan pada hari biasa. Anda bisa
+                menemukan kerak telor di sekitar Kota Tua, Jakarta Barat.
+                Menurut sejarah, Kerak Telor sudah ada dari zaman kolonial
+                Belanda, kerak telor diciptakan oleh masyarakat Betawi secara
+                tak sengaja Pada tahun 1920-an. Makanan ini cukup digemari oleh
+                banyak sekali masyarakat Betawi.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/StreetFood/kerakTelor.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.65638841083!2d106.66470264108635!3d-6.229379590702139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1714305723546!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about2">
+            <div class="heading">
+              <h1>Cilok, Bandung</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Cilok akronim dari aci dicolok "tapioka ditusuk" adalah penganan
+                yang terbuat dari tapioka, bentuknya bulat menyerupai bakso,
+                diberi isian gajih, daging, dan sebagainya, biasanya disajikan
+                dengan saus, kecap, sambal kacang, dan sebagainya. Bentuknya
+                bulat-bulat dan kadang diisi dengan isian, seperti daging atau
+                potongan telur di dalamnya. Hingga saat ini masih belum
+                diketahui dari mana asal cilok sebenarnya, tapi banyak yang
+                menyebut cilok berasal dari Kota Bandung.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/StreetFood/cilokBandung.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.60965057953!2d107.56075501783293!3d-6.903271951983397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1714305769134!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about3">
+            <div class="heading">
+              <h1>Bakwan Kawi, Malang</h1>
+            </div>
+            <div class="text">
+              <p>
+                Bakwan kawi Malang adalah salah satu kreasi dari menu bakso
+                Malang. Biasanya, dalam satu mangkuk bakwan kawi, kita akan
+                menemukan bakso, pangsit rebus isi daging, pangsit goreng, dan
+                tahu utuh yang disiram kuah kaldu dan diberi topping irisan daun
+                bawang. Berikan sambal secukupnya dan bakwan kawi yang Anda
+                makan akan makin sempurna. Kemudian baksonya juga seringkali
+                dikreasikan dengan berbagai macam isian seperti keju, cabe,
+                daging cincang, telur puyuh, serta kondimen tambahan lain
+                seperti usus, “tetelan”, dan lontong.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/StreetFood/bakwanKawi.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.33876397018!2d112.54938048525975!3d-7.978467194606789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Kota%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1714305846839!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about4">
+            <div class="heading">
+              <h1>Serabi, Solo</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Srabi Solo atau Serabi Solo adalah sebuah makanan ringan yang
+                berasal dari Solo, Jawa Tengah. Makanan ini terbuat dari tepung
+                beras yang dicampur dengan santan dan digoreng di atas arang
+                mirip panekuk. Srabi adalah jajanan khas dari Solo yang terbuat
+                dari santan kelapa dicampur dengan sedikit tepung, yang
+                menjadikannya bercita rasa gurih. Biasa juga diberi taburan
+                berupa potongan pisang, nangka atau bahkan meses dan keju bila
+                suka. Srabi yang terkenal berasal dari daerah Notokusuman, yang
+                sering disingkat menjadi Notosuman (Srabi Notosuman).
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/StreetFood/serabiSolo.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63282.32625735476!2d110.77783350777129!3d-7.559121980892654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16855db09efb%3A0xa6c2dbfdf275a4f9!2sKota%20Surakarta%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1714305903727!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about5">
+            <div class="heading">
+              <h1>Wedang Ronde, Jogja</h1>
+            </div>
+            <div class="text">
+              <p>
+                Wedang ronde adalah salah satu jenis minuman dari Indonesia.
+                Minuman ini termasuk jenis minuman herba tradisional. Wedang
+                ronde dibuat sebagai minuman panas dan masuk kategori minuman
+                panas yang memiliki isi. Ciri-ciri yang utama adalah berbentuk
+                bola yang berbahan kacang-kacangan dan tepung beras dalam air
+                panas yang terbuat dari jahe.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/StreetFood/wedangRonde.webp" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.983719476455!2d110.33364495877125!3d-7.803163418921152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1714305966665!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">Jogja</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/jogjaku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://x.com/Jogja24Jam?t=Zz5YdWcZUpRdTkeApib7eQ&s=08"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@jogjakuofficial?_t=8kQTI8UQvP0&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Destinasi</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam.html">Alam</a></li>
+            <li><a href="destinasi-belanja.html">Belanja</a></li>
+            <li><a href="destinasi-sejarah.html">Sejarah</a></li>
+            <li><a href="destinasi-hiburan.html">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Kuliner</h3>
+          <ul class="footer__links">
+            <li><a href="makanantradisional.html">Makanan Tradisional</a></li>
+            <li><a href="restoran.html">Restoran & Cafe</a></li>
+            <li><a href="streetfood.html">Streetfood</a></li>
+            <li><a href="streetfood.html">Bar & Lounge</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Akomodasi</h3>
+          <ul class="footer__links">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="transportasi.html">Transportasi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      src="scriptDisplay.js"
+    ></script>
+  </body>
+</html>

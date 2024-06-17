@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>HomePage</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage.html"> Enjoy Indonesia </a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="destinasi-alam.html" class="dropbtn">DESTINASI</a>
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam.html">
+                  <img
+                    src="image\pohonfix.png"
+                    alt="Destinasi Alam"
+                    class="dropdown-icon"
+                  />
+                  Alam
+                </a>
+                <a href="destinasi-sejarah.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Destinasi Sejarah"
+                    class="dropdown-icon"
+                  />
+                  Sejarah
+                </a>
+                <a href="destinasi-belanja.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Destinasi Belanja"
+                    class="dropdown-icon"
+                  />
+                  Belanja
+                </a>
+                <a href="destinasi-hiburan.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Destinasi Hiburan"
+                    class="dropdown-icon"
+                  />
+                  Hiburan
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional.html" class="dropbtn">KULINER</a>
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional.html">
+                  <img
+                    src="image\tradisionalfix.png"
+                    alt="Makanan Tradisional"
+                    class="dropdown-icon"
+                  />
+                  Makanan Tradisional
+                </a>
+                <a href="kuliner-restoran.html">
+                  <img
+                    src="image\restoranfix.png"
+                    alt="Restoran"
+                    class="dropdown-icon"
+                  />
+                  Restoran
+                </a>
+                <a href="kuliner-streetfood.html">
+                  <img
+                    src="image\streetfoodfix.png"
+                    alt="Streetfood"
+                    class="dropdown-icon"
+                  />
+                  Streetfood
+                </a>
+                <a href="kuliner-bar.html">
+                  <img
+                    src="image\barfix.png"
+                    alt="Bar & Lounge"
+                    class="dropdown-icon"
+                  />
+                  Bar & Lounge
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">AKOMODASI</a>
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel.html">Tempat Tinggal</a>
+                <!-- Submenu untuk opsi Hotel -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse.html">
+                    <img
+                      src="image\penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel.html">
+                    <img
+                      src="image\hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse.html">
+                    <img
+                      src="image\guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Selamat Datang</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Gulir kebawah
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Ikuti Kami</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i class="ri-volume-up-line" id="sound-icon"></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\id.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          ID <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="homepage.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="homepage-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="section__container about__container">
+        <div class="about__image about__image-1" id="about">
+          <img src="image\destinasi-homepage.jpg" alt="about" />
+        </div>
+        <div class="about__content about__content-1">
+          <h3 class="section__subheader">Pertama</h3>
+          <h2 class="section__header">DESTINASI</h2>
+          <p style="text-align: justify">
+            Jelajahi keindahan alam dan kekayaan budaya Indonesia. Nikmati
+            pesona pantai berpasir putih, situs sejarah megah, dan pengalaman
+            berbelanja serta hiburan yang beragam di negeri ini.
+          </p>
+          <div class="about__btn">
+            <a href="destinasi-alam.html">
+              Lihat Destinasi
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="about__image about__image-2" id="equipment">
+          <img src="image/gudeghomepage.jpeg" alt="about" />
+        </div>
+        <div class="about__content about__content-2">
+          <h3 class="section__subheader">Kedua</h3>
+          <h2 class="section__header">KULINER</h2>
+          <p style="text-align: justify">
+            Rasakan kelezatan kuliner Indonesia yang khas dan beragam. Nikmati
+            hidangan tradisional dan makanan jalanan yang memikat di setiap
+            sudut negeri.
+          </p>
+
+          <div class="about__btn">
+            <a href="kuliner-tradisional.html">
+              Lihat Kuliner
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="about__image about__image-3" id="about">
+          <img src="image\akomodasi-homepage.jpg" alt="gambar kopi merapi" />
+        </div>
+        <div class="about__content about__content-3">
+          <h3 class="section__subheader">Ketiga</h3>
+          <h2 class="section__header">AKOMODASI</h2>
+          <p style="text-align: justify">
+            Nikmati pengalaman menginap yang beragam di Indonesia, mulai dari
+            hotel mewah hingga guesthouse yang ramah. Temukan akomodasi yang
+            sesuai dengan selera dan budget Anda, dari penthouse eksklusif
+            hingga hostel yang nyaman.
+          </p>
+          <div class="about__btn">
+            <a href="akomodasi-hotel.html">
+              Lihat Akomodasi
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#home">Enjoy Indonesia</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kemenparekraf?_t=8lssPVuUJim&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Destinasi</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam.html">Alam</a></li>
+            <li><a href="destinasi-belanja.html">Belanja</a></li>
+            <li><a href="destinasi-sejarah.html">Sejarah</a></li>
+            <li><a href="destinasi-hiburan.html">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Kuliner</h3>
+          <ul class="footer__links">
+            <li><a href="kuliner-tradisional.html">Makanan Tradisional</a></li>
+            <li><a href="kuliner-restoran.html">Restoran dan Cafe</a></li>
+            <li><a href="kuliner-streetfood.html">Streetfood</a></li>
+            <li><a href="kuliner-bar.html">Bar & Lounge</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Akomodasi</h3>
+          <ul class="footer__links">
+            <li><a href="akomodasi-hotel.html">Tempat Tinggal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

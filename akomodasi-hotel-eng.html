@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage-eng.html">Enjoy Indonesia</a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="destinasi-alam-eng.html" class="dropbtn-eng"
+                >PLACE TO GO</a
+              >
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam-eng.html">
+                  <img
+                    src="image/pohonfix.png"
+                    alt="Nature Destinations"
+                    class="dropdown-icon"
+                  />
+                  Nature
+                </a>
+                <a href="destinasi-sejarah-eng.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Historical Destinations"
+                    class="dropdown-icon"
+                  />
+                  History
+                </a>
+                <a href="destinasi-belanja-eng.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Shopping Destinations"
+                    class="dropdown-icon"
+                  />
+                  Shopping
+                </a>
+                <a href="destinasi-hiburan-eng.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Entertainment Destinations"
+                    class="dropdown-icon"
+                  />
+                  Entertainment
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional-eng.html" class="dropbtn-eng"
+                >EAT & DRINK</a
+              >
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional-eng.html">
+                  <img
+                    src="image/tradisionalfix.png"
+                    alt="Traditional Foods"
+                    class="dropdown-icon"
+                  />
+                  Traditional Foods
+                </a>
+                <a href="kuliner-restoran-eng.html">
+                  <img
+                    src="image/restoranfix.png"
+                    alt="Restaurants"
+                    class="dropdown-icon"
+                  />
+                  Restaurants
+                </a>
+                <a href="kuliner-streetfood-eng.html">
+                  <img
+                    src="image/streetfoodfix.png"
+                    alt="Street Foods"
+                    class="dropdown-icon"
+                  />
+                  Street Foods
+                </a>
+                <a href="kuliner-bar-eng.html">
+                  <img
+                    src="image/barfix.png"
+                    alt="Bars & Lounges"
+                    class="dropdown-icon"
+                  />
+                  Bars & Lounges
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel-eng.html" class="dropbtn-eng"
+                >WAY TO GO</a
+              >
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel-eng.html">Accommodation</a>
+                <!-- Submenu for Accommodation options -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse-eng.html">
+                    <img
+                      src="image/penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel-eng.html">
+                    <img
+                      src="image/hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse-eng.html">
+                    <img
+                      src="image/guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Welcome to Indonesia</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Scroll down
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Follow Us</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\eng.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          EN <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="destinasi-alam.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="destinasi-alam-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div class="itemmelodic" style="background-image: url(img/capela.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Capella Ubud, Bali</div>
+            <div class="home__content" class="button-container">
+              <a href="#about5">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemmelodic" style="background-image: url(img/alila.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Alila Manggis, Bali</div>
+            <div class="home__content">
+              <a href="#about1">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemmelodic" style="background-image: url(img/nihi.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Nihi Sumba, Sumba</div>
+            <div class="home__content">
+              <a href="#about2">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(img/mandapa.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Mandapa, a Ritz-Carlton Reserve, Bali</div>
+            <div class="home__content">
+              <a href="#about3">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemmelodic" style="background-image: url(img/alila1.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Alila Villas Uluwatu, Bali</div>
+            <div class="home__content">
+              <a href="#about4">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Alila Manggis <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Inspired by the early European settlers in the 1800s, renowned
+                architect Bill Bensley conceptualized Capella Ubud, Bali as a
+                tribute to their adventurous spirit. Located amidst dramatic
+                terraced landscapes and nestled among lush rainforests, rice
+                paddies, and the sacred Wos River in the original Balinese
+                artist village of Keliki, this luxury tented camp is a secluded
+                sanctuary that truly captures the imagination of those craving
+                unique experiences, allowing them to enjoy the untouched essence
+                of Ubud's surroundings in private and stylish comfort.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qGcIGvlWXNI?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.0054879029917!2d115.53550187505981!3d-8.498845991542831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd20e0769742a5d%3A0xb2a608415b848e70!2sAlila%20Manggis!5e0!3m2!1sid!2sid!4v1714235150846!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Nihi Sumba <br />
+                Sumba
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                As the only resort on the largely undeveloped island of Sumba,
+                NIHI Sumba is situated on 560 hectares of pristine land,
+                including a beautiful and wild private beach stretching over one
+                and a half miles. Initially built as a collection of rustic
+                bungalows for surfers drawn to the globally acclaimed exclusive
+                waves.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ivh28cCJzIE?autoplay=1&mute=1&loopsi=qZtc9FoCS0dqQIZA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2013114.020001705!2d116.93725735624999!3d-9.777630800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c9daffdedf4df%3A0x2b81189bedf1a30a!2sNIHI%20Sumba!5e0!3m2!1sid!2sid!4v1714235803191!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Mandapa, a Ritz-Carlton Reserve <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Located in the heart of Bali's cultural and spiritual hub of
+                Ubud, Mandapa, A Ritz-Carlton Reserve is the third property in
+                the prestigious Ritz-Carlton Reserve collection. An intimate
+                hotel comprising only 60 villas and suites complete with two
+                swimming pools, a luxurious spa, and active excursions to ignite
+                the spirit.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/RMLVEn1NkAE?autoplay=1&mute=1&loopssi=rpRv0DojZU_lDShM&amp;start=34"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.138338978841!2d115.24282057505961!3d-8.48592729155531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd222c35decfd23%3A0x3e793b8a6114762d!2sMandapa!5e0!3m2!1sid!2sid!4v1714236263717!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Alila Villas Uluwatu <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Uluwatu, Bali Located on one of the highest cliffs in Indonesia,
+                Alila Villas Uluwatu infuses the essence of Bali into every
+                aspect of the property. A stunning destination for tranquility
+                and seclusion—the peace of pristine ocean views and the inner
+                silence that comes with the luxury of space—inspires
+                introspection and discovery.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/roo8zssd6OI?autoplay=1&mute=1&loopsi=a1SgUkDyFO_pcnjM&amp;start=34"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.359916611327!2d115.1345304750638!3d-8.846043391208186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25add7437e1c1%3A0xb608f145222330a6!2sAlila%20Villas%20Uluwatu!5e0!3m2!1sid!2sid!4v1714236453683!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Capella Ubud <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Inspired by the early European settlers in the 1800s, renowned
+                architect Bill Bensley conceptualized Capella Ubud, Bali as a
+                tribute to their adventurous spirit. Located amidst dramatic
+                terraced landscapes and nestled among lush rainforests, rice
+                paddies, and the sacred Wos River in the original Balinese
+                artist village of Keliki, this luxury tented camp is a secluded
+                sanctuary that truly captures the imagination of those craving
+                unique experiences, allowing them to enjoy the untouched essence
+                of Ubud's surroundings in private and stylish comfort.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/RQ7pWhh7wAA?autoplay=1&mute=1&loopsi=-saRwuR-OwrlbUu4&amp;start=34"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.525070877326!2d115.26553677505936!3d-8.448209091591801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2232a33674863%3A0x25093ef92f99017c!2sCapella%20Ubud%2C%20Bali!5e0!3m2!1sid!2sid!4v1714237332659!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#home">Enjoy Indonesia</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kemenparekraf?_t=8lssPVuUJim&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Place to Go</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam-eng.html">Nature</a></li>
+            <li><a href="destinasi-belanja-eng.html">Shopping</a></li>
+            <li><a href="destinasi-sejarah-eng.html">History</a></li>
+            <li><a href="destinasi-hiburan-eng.html">Entertainment</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Eat & Drink</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="kuliner-tradisional-eng.html">Traditional Foods</a>
+            </li>
+            <li><a href="kuliner-restoran-eng.html">Restaurants</a></li>
+            <li><a href="kuliner-streetfood-eng.html">Street Foods</a></li>
+            <li><a href="kuliner-bar-eng.html">Bars & Lounges</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Way to Go</h3>
+          <ul class="footer__links">
+            <li><a href="akomodasi-hotel-eng.html">Accommodation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

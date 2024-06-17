@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Bar & Lounge</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage.html"> Enjoy Indonesia </a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">DESTINASI</a>
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam.html">
+                  <img
+                    src="image\pohonfix.png"
+                    alt="Destinasi Alam"
+                    class="dropdown-icon"
+                  />
+                  Alam
+                </a>
+                <a href="destinasi-sejarah.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Destinasi Sejarah"
+                    class="dropdown-icon"
+                  />
+                  Sejarah
+                </a>
+                <a href="destinasi-belanja.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Destinasi Belanja"
+                    class="dropdown-icon"
+                  />
+                  Belanja
+                </a>
+                <a href="destinasi-hiburan.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Destinasi Hiburan"
+                    class="dropdown-icon"
+                  />
+                  Hiburan
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional.html" class="dropbtn">KULINER</a>
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional.html">
+                  <img
+                    src="image\tradisionalfix.png"
+                    alt="Makanan Tradisional"
+                    class="dropdown-icon"
+                  />
+                  Makanan Tradisional
+                </a>
+                <a href="kuliner-restoran.html">
+                  <img
+                    src="image\restoranfix.png"
+                    alt="Restoran"
+                    class="dropdown-icon"
+                  />
+                  Restoran
+                </a>
+                <a href="kuliner-streetfood.html">
+                  <img
+                    src="image\streetfoodfix.png"
+                    alt="Streetfood"
+                    class="dropdown-icon"
+                  />
+                  Streetfood
+                </a>
+                <a href="kuliner-bar.html">
+                  <img
+                    src="image\barfix.png"
+                    alt="Bar & Lounge"
+                    class="dropdown-icon"
+                  />
+                  Bar & Lounge
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">AKOMODASI</a>
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel.html">Tempat Tinggal</a>
+                <!-- Submenu untuk opsi Hotel -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse.html">
+                    <img
+                      src="image\penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel.html">
+                    <img
+                      src="image\hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse.html">
+                    <img
+                      src="image\guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Selamat Datang</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Gulir kebawah
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Ikuti Kami</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\id.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          ID <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="homepage.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="homepage-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/yudjum.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Gudeg Yu Djum, Yogyakarta</div>
+            <div class="home__content">
+              <a href="#about1"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/Restoran/warungBuKris.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Warung Bu Kris, Surabaya</div>
+            <div class="home__content">
+              <a href="#about2"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/Restoran/rajaSate.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Raja Sate, Solo</div>
+            <a href="#about3"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image-kuliner/Restoran/bebekBengil.jpeg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Bebek Bengil, Bali</div>
+            <a href="#about4"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="
+            background-image: url(image-kuliner/Restoran/terasRumahNenek.jpg);
+          "
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Teras Rumah Nenek, Jakarta</div>
+            <a href="#about5"><button>Lihat Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>Gudeg Yu Djum, Yogyakarta</h1>
+            </div>
+            <div class="text">
+              <p>
+                Berdiri sejak tahun 1950, Gudeg Yu Djum telah menjadi ikon
+                kuliner khas Daerah Istimewa Yogyakarta. Rasa khas gudegnya
+                berasal dari bahan-bahan pilihan dan bermutu yang telah melalui
+                proses masak secara tradisional berdasarkan resep asli yang
+                dipertahankan hingga saat ini. Gudeg Yu Djum Wijilan Beralamat
+                di jalan Wijilan No.167 Yogyakarta. Lokasi yang sangat strategis
+                dan mudah untuk mengunjunginya karena terletak di pusat kota dan
+                merupakan daerah wisata kota Yogyakarta yaitu Kraton Jogjakarta
+                dan Wisata kuliner Gudeg Wijilan.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/yudjum.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.860771959434!2d110.36417837443346!3d-7.804560577477972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a574135fe1069%3A0x38ddc01ac0a38eec!2sGudeg%20Yu%20Djum%20Wijilan%20167!5e0!3m2!1sid!2sid!4v1714380975473!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about2">
+            <div class="heading">
+              <h1>Warung Bu Kris, Surabaya</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Jika jalan-jalan ke kota Surabaya, kita bisa mengunjungi Warung
+                Bu Kris untuk masuk ke dalam list kulineran kita. Warung Bu Kris
+                sendiri berdiri pada tahun 1993 dan beralamat di Jl. Kayoon
+                No.46B, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/Restoran/warungBuKris.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31661.965599169198!2d112.71509060792974!3d-7.269752901895049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd8fe821f07%3A0xef0c8aa179f7bd65!2sWarung%20Bu%20Kris!5e0!3m2!1sid!2sid!4v1714729352552!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about3">
+            <div class="heading">
+              <h1>Raja Sate, Solo</h1>
+            </div>
+            <div class="text">
+              <p>
+                Raja Sate solo berdiri pada tahun 1990 dan terletak di di Jl.
+                Honggowongso No.36, Sriwedari, Laweyan, Kota Surakarta. Pemilik
+                dari restoran ini ialah Sumanto. Restoran ini terkenal dengan
+                sate kambing dan domba yang memiliki ciri khasnya tersendiri.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/Restoran/rajaSate.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31640.224010161586!2d110.78909535042801!3d-7.571925999661965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a171ac436f6a7%3A0xe2cd460bd1569750!2sRADJA%20DOMBA%20SATE%20KAMBING!5e0!3m2!1sid!2sid!4v1714729446174!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about4">
+            <div class="heading">
+              <h1>Bebek Bengil, Bali</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Bebek Bengil menyajikan menu khas yang menawarkan 'bebek renyah
+                asli Bali sejak tahun 1990', serta sate bebek dan bebek asap
+                (yang harus dipesan sehari sebelumnya). Menu di sini juga
+                mencakup sejumlah pilihan internasional dan Indonesia lainnya.
+                Restoran tersebut merupakan bagian dari grup Agung Raka yang
+                berada di belakang Agung Raka Bungalows dan Galeri Seni Rupa
+                Agung Raka. Restoran pertama terletak di tengah Jalan Hanoman,
+                di desa Padang Tegal di Ubud. Tepat sebelum belokan menuju ke
+                Suaka Hutan Monyet Ubud yang terkenal. Anda dapat menemukan
+                cabang lain di Jalan Monkey Forest Road.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/Restoran/bebekBengil.jpeg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.80991837027!2d115.25909457216844!3d-8.517828167512683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d723f1e6ee5%3A0xb1b3fbe249c74f02!2sBebek%20Bengil!5e0!3m2!1sid!2sid!4v1714729513358!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about5">
+            <div class="heading">
+              <h1>Teras Rumah Nenek, Jakarta</h1>
+            </div>
+            <div class="text">
+              <p>
+                Di bagian selatan Jakarta Timur, ada kafe nyaman yang asyik
+                untuk dikunjungi. Bahkan, kafe ini punya suasana nyaman bak di
+                rumah nenek. Kafe ini bernama Teras Rumah Nenek. Konsep
+                kebersamaan, suasana dan keramahan kafe Teras Rumah Nenek,
+                menjadi daya tarik dari tempat nongkrong ini. Beberapa sajian
+                makanannya juga mengingatkan pengunjung akan sajian rumahan ala
+                rumah nenek. Tempat yang sejuk dan nyaman ini berada di kawasan
+                Cibubur, Jakarta Timur. Tepatnya di Jalan Abdulrahman No.46,
+                Cibubur, Kecamatan Ciracas, Jakarta Timur.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image-kuliner/Restoran/terasRumahNenek.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.236776135061!2d106.87861207441193!3d-6.363394962248967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed302dffac99%3A0x5865ecdaf645cf7f!2sTeras%20Rumah%20Nenek!5e0!3m2!1sid!2sid!4v1714729583932!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">Jogja</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/jogjaku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://x.com/Jogja24Jam?t=Zz5YdWcZUpRdTkeApib7eQ&s=08"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@jogjakuofficial?_t=8kQTI8UQvP0&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Destinasi</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam.html">Alam</a></li>
+            <li><a href="destinasi-belanja.html">Belanja</a></li>
+            <li><a href="destinasi-sejarah.html">Sejarah</a></li>
+            <li><a href="destinasi-hiburan.html">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Kuliner</h3>
+          <ul class="footer__links">
+            <li><a href="makanantradisional.html">Makanan Tradisional</a></li>
+            <li><a href="restoran.html">Restoran & Cafe</a></li>
+            <li><a href="streetfood.html">Streetfood</a></li>
+            <li><a href="streetfood.html">Bar & Lounge</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Akomodasi</h3>
+          <ul class="footer__links">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="transportasi.html">Transportasi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      src="scriptDisplay.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Bar & Lounge</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage.html"> Enjoy Indonesia </a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">DESTINASI</a>
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam.html">
+                  <img
+                    src="image\pohonfix.png"
+                    alt="Destinasi Alam"
+                    class="dropdown-icon"
+                  />
+                  Alam
+                </a>
+                <a href="destinasi-sejarah.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Destinasi Sejarah"
+                    class="dropdown-icon"
+                  />
+                  Sejarah
+                </a>
+                <a href="destinasi-belanja.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Destinasi Belanja"
+                    class="dropdown-icon"
+                  />
+                  Belanja
+                </a>
+                <a href="destinasi-hiburan.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Destinasi Hiburan"
+                    class="dropdown-icon"
+                  />
+                  Hiburan
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional.html" class="dropbtn">KULINER</a>
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional.html">
+                  <img
+                    src="image\tradisionalfix.png"
+                    alt="Makanan Tradisional"
+                    class="dropdown-icon"
+                  />
+                  Makanan Tradisional
+                </a>
+                <a href="kuliner-restoran.html">
+                  <img
+                    src="image\restoranfix.png"
+                    alt="Restoran"
+                    class="dropdown-icon"
+                  />
+                  Restoran
+                </a>
+                <a href="kuliner-streetfood.html">
+                  <img
+                    src="image\streetfoodfix.png"
+                    alt="Streetfood"
+                    class="dropdown-icon"
+                  />
+                  Streetfood
+                </a>
+                <a href="kuliner-bar.html">
+                  <img
+                    src="image\barfix.png"
+                    alt="Bar & Lounge"
+                    class="dropdown-icon"
+                  />
+                  Bar & Lounge
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">AKOMODASI</a>
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel.html">Tempat Tinggal</a>
+                <!-- Submenu untuk opsi Hotel -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse.html">
+                    <img
+                      src="image\penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel.html">
+                    <img
+                      src="image\hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse.html">
+                    <img
+                      src="image\guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Selamat Datang</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Gulir kebawah
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Ikuti Kami</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\id.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          ID <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="homepage.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="homepage-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/belanja-beringharjo.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Pasar Beringharjo</div>
+            <div class="home__content">
+              <a href="#about1"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/belanja-pasargede.png)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Pasar Gede</div>
+            <div class="home__content">
+              <a href="#about2"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/belanja-plazaindo.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Plaza Indonesia</div>
+            <div class="home__content">
+              <a href="#about3"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/belanja-tanahabang.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Tanah Abang</div>
+            <div class="home__content">
+              <a href="#about4"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/belanja-tunjungan.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Tunjungan Plaza</div>
+            <div class="home__content">
+              <a href="#about5"><button>Lihat Selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>Pasar Beringharjo</h1>
+            </div>
+            <div class="text">
+              <p>
+                Pasar Beringharjo terletak di pusat Kota Yogyakarta, Indonesia,
+                tepat di sebelah selatan Keraton Yogyakarta. Pasar ini merupakan
+                salah satu pasar tradisional terbesar di Yogyakarta dan memiliki
+                beragam barang dagangan seperti batik, kain, kerajinan tangan,
+                oleh-oleh khas, rempah-rempah, dan masih banyak lagi. Selain
+                belanja, pengunjung juga dapat merasakan nuansa khas pasar
+                tradisional Indonesia dan bernegosiasi harga dengan para
+                pedagang. Pasar Beringharjo juga menjadi tempat wisata budaya
+                yang menarik bagi wisatawan lokal maupun mancanegara.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/belanja-beringharjo.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9151113103526!2d110.3631621747661!3d-7.798811992221333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af7fe02ca3761%3A0x39ebbc4df90b410c!2sPasar%20Beringharjo%20Yogyakarta!5e0!3m2!1sid!2sid!4v1715331233982!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about2">
+            <div class="heading">
+              <h1>Pasar Gede</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Pasar Gede adalah sebuah pasar tradisional yang terletak di
+                pusat kota Solo, Jawa Tengah, Indonesia. Terkenal sebagai salah
+                satu pasar terbesar dan tertua di kota ini, Pasar Gede
+                menawarkan beragam barang dagangan mulai dari pakaian, makanan,
+                hasil pertanian, kerajinan lokal, hingga barang antik. Daya
+                tarik utamanya adalah suasana pasar yang ramai, warna-warni,
+                serta keberagaman produk yang ditawarkan. Pasar ini juga menjadi
+                tempat yang menarik untuk menjelajahi kekayaan budaya dan
+                kuliner Jawa.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/belanja-pasargede.png" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0515739524153!2d110.8288696747636!3d-7.569356592444746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16f228336cdd%3A0x700185159eb67ef5!2sPasar%20Gede%20Hardjonagoro!5e0!3m2!1sid!2sid!4v1715331283929!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about3">
+            <div class="heading">
+              <h1>Plaza Indonesia</h1>
+            </div>
+            <div class="text">
+              <p>
+                Plaza Indonesia adalah pusat perbelanjaan mewah yang terletak di
+                pusat Jakarta, Indonesia. Terkenal karena menyajikan pengalaman
+                belanja yang eksklusif dengan berbagai merek internasional
+                terkemuka serta restoran mewah. Plaza Indonesia juga menawarkan
+                galeri seni, bioskop, dan hotel bintang lima yang menambah daya
+                tariknya sebagai destinasi wisata dan belanja yang bergengsi di
+                Jakarta.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/belanja-plazaindo.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.529853571604!2d106.81937187475037!3d-6.193597693794058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f42108e6d503%3A0x7d7fe17ad64a053f!2sPlaza%20Indonesia!5e0!3m2!1sid!2sid!4v1715331336525!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about4">
+            <div class="heading">
+              <h1>Tanah Abang</h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Tanah Abang adalah sebuah wilayah di Jakarta, Indonesia, yang
+                terkenal karena pasar grosirnya yang ramai dan beragam.
+                Lokasinya strategis, dekat dengan pusat bisnis dan memiliki
+                akses transportasi yang baik. Pasar Tanah Abang merupakan salah
+                satu pasar tekstil terbesar di Asia Tenggara, menawarkan
+                berbagai macam produk tekstil mulai dari kain, pakaian,
+                aksesoris, hingga perlengkapan fashion dengan harga grosir.
+                Keberagaman produk dan harga yang kompetitif menjadikan Tanah
+                Abang sebagai tujuan belanja favorit bagi pengusaha dan pembeli
+                eceran
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/belanja-tanahabang.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5643106802354!2d106.80706027732157!3d-6.189009577808542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f69b7ca68c63%3A0x5b53885371ab984!2sPs.%20Tanah%20Abang%2C%20Kb.%20Kacang%2C%20Kecamatan%20Tanah%20Abang%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1715349517768!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about5">
+            <div class="heading">
+              <h1>Tunjungan Plaza</h1>
+            </div>
+            <div class="text">
+              <p>
+                Tunjungan Plaza adalah pusat perbelanjaan yang terletak di pusat
+                kota Surabaya, Indonesia. Terkenal sebagai salah satu destinasi
+                belanja utama di kota tersebut, Tunjungan Plaza menawarkan
+                beragam toko, restoran, dan pusat hiburan di dalamnya. Dikenal
+                karena desain arsitektur yang megah dan fasilitas modernnya,
+                Tunjungan Plaza menjadi favorit bagi para pengunjung yang ingin
+                berbelanja, bersantap, atau sekadar menikmati suasana kota.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="image/belanja-tunjungan.jpg" alt="" />
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.818991278489!2d112.73597127476049!3d-7.261430692745379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f95e1910b90f%3A0x9ec46785d9c7f081!2sTunjungan%20Plaza%2C%20Kedungdoro%2C%20Kec.%20Tegalsari%2C%20Surabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1715349561246!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#home">Enjoy Indonesia</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kemenparekraf?_t=8lssPVuUJim&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Destinasi</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam.html">Alam</a></li>
+            <li><a href="destinasi-belanja.html">Belanja</a></li>
+            <li><a href="destinasi-sejarah.html">Sejarah</a></li>
+            <li><a href="destinasi-hiburan.html">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Kuliner</h3>
+          <ul class="footer__links">
+            <li><a href="kuliner-tradisional.html">Makanan Tradisional</a></li>
+            <li><a href="kuliner-restoran.html">Restoran dan Cafe</a></li>
+            <li><a href="kuliner-streetfood.html">Streetfood</a></li>
+            <li><a href="kuliner-bar.html">Bar & Lounge</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Akomodasi</h3>
+          <ul class="footer__links">
+            <li><a href="akomodasi-hotel.html">Tempat Tinggal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      src="scriptDisplay.js"
+    ></script>
+  </body>
+</html>

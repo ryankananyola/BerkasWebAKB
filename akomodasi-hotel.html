@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage.html"> Enjoy Indonesia </a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">DESTINASI</a>
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam.html">
+                  <img
+                    src="image\pohonfix.png"
+                    alt="Destinasi Alam"
+                    class="dropdown-icon"
+                  />
+                  Alam
+                </a>
+                <a href="destinasi-sejarah.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Destinasi Sejarah"
+                    class="dropdown-icon"
+                  />
+                  Sejarah
+                </a>
+                <a href="destinasi-belanja.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Destinasi Belanja"
+                    class="dropdown-icon"
+                  />
+                  Belanja
+                </a>
+                <a href="destinasi-hiburan.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Destinasi Hiburan"
+                    class="dropdown-icon"
+                  />
+                  Hiburan
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional.html" class="dropbtn">KULINER</a>
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional.html">
+                  <img
+                    src="image\tradisionalfix.png"
+                    alt="Makanan Tradisional"
+                    class="dropdown-icon"
+                  />
+                  Makanan Tradisional
+                </a>
+                <a href="kuliner-restoran.html">
+                  <img
+                    src="image\restoranfix.png"
+                    alt="Restoran"
+                    class="dropdown-icon"
+                  />
+                  Restoran
+                </a>
+                <a href="kuliner-streetfood.html">
+                  <img
+                    src="image\streetfoodfix.png"
+                    alt="Streetfood"
+                    class="dropdown-icon"
+                  />
+                  Streetfood
+                </a>
+                <a href="kuliner-bar.html">
+                  <img
+                    src="image\barfix.png"
+                    alt="Bar & Lounge"
+                    class="dropdown-icon"
+                  />
+                  Bar & Lounge
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel.html" class="dropbtn">AKOMODASI</a>
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel.html">Tempat Tinggal</a>
+                <!-- Submenu untuk opsi Hotel -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse.html">
+                    <img
+                      src="image\penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel.html">
+                    <img
+                      src="image\hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse.html">
+                    <img
+                      src="image\guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Selamat Datang</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Gulir kebawah
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Ikuti Kami</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\id.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          ID <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="homepage.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="homepage-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div class="itemmelodic" style="background-image: url(img/capela.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Capella Ubud, Bali</div>
+            <div class="home__content" class="button-container">
+              <a href="#about5">
+                <button>Lihat Selengkapnya</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemmelodic" style="background-image: url(img/alila.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Alila Manggis, Bali</div>
+            <div class="home__content">
+              <a href="#about1">
+                <button>Lihat Selengkapnya</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemmelodic" style="background-image: url(img/nihi.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Nihi Sumba, Sumba</div>
+            <div class="home__content">
+              <a href="#about2">
+                <button>Lihat Selengkapnya</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/hyatt.webp)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Hyatt Regency, Yogyakarta</div>
+            <div class="home__content">
+              <a href="#about3">
+                <button>Lihat Selengkapnya</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="itemmelodic" style="background-image: url(img/alila1.webp)">
+          <div class="contentmelodic">
+            <div class="namemelodic">Alila Villas Uluwatu, Bali</div>
+            <div class="home__content">
+              <a href="#about4">
+                <button>Lihat Selengkapnya</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Alila Manggis <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Terinspirasi oleh pemukim awal Eropa pada tahun 1800an, arsitek
+                ternama Bill Bensley mengonsep Capella Ubud, Bali sebagai
+                penghormatan terhadap semangat petualangan mereka. Terletak di
+                lanskap bertingkat yang dramatis dan terletak di antara hutan
+                hujan lebat, sawah, dan Sungai Wos yang suci, di desa seniman
+                asli Bali bernama Keliki, perkemahan tenda mewah ini adalah
+                tempat perlindungan tersembunyi dari jauh yang benar-benar
+                menangkap imajinasi mereka yang mendambakan pengalaman unik,
+                yang memungkinkan mereka menikmati esensi alam sekitar Ubud yang
+                belum terjamah dalam kenyamanan pribadi dan penuh gaya.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qGcIGvlWXNI?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.0054879029917!2d115.53550187505981!3d-8.498845991542831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd20e0769742a5d%3A0xb2a608415b848e70!2sAlila%20Manggis!5e0!3m2!1sid!2sid!4v1714235150846!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Nihi Sumba <br />
+                Sumba
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Sebagai satu-satunya resor di pulau Sumba yang hampir seluruhnya
+                belum berkembang, NIHI Sumba terletak di lahan seluas 560 hektar
+                yang masih alami, termasuk pantai pribadi yang indah dan liar
+                sepanjang satu setengah mil. NIHI Sumba awalnya dibangun sebagai
+                kumpulan bungalow pedesaan untuk para peselancar yang terpikat
+                oleh ombak eksklusif yang didambakan secara global.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ivh28cCJzIE?autoplay=1&mute=1&loopsi=qZtc9FoCS0dqQIZA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2013114.020001705!2d116.93725735624999!3d-9.777630800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c9daffdedf4df%3A0x2b81189bedf1a30a!2sNIHI%20Sumba!5e0!3m2!1sid!2sid!4v1714235803191!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Hyatt Regency <br />
+                Yogyakarta
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Hyatt Regency Yogyakarta adalah hotel bintang 5 di Jogja,
+                jantung budaya Jawa. Properti indah kami terletak di pinggiran
+                barat laut Yogyakarta yang indah, terletak secara elegan di
+                taman hotel yang indah seluas 22 hektar.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Yo-d2PV40hY?autoplay=1&mute=1&si=ZlRR6RL_KVpfAec-"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.4650610367166!2d110.37128402505165!3d-7.740393792278198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58e3a6ece3b5%3A0xa3ce3fb7e2fef029!2sHyatt%20Regency%20Yogyakarta!5e0!3m2!1sid!2sid!4v1715511764312!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Alila Villas Uluwatu <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p style="text-align: justify">
+                Uluwatu, Bali Terletak di salah satu tumbuhan tertinggi di
+                Indonesia, Alila Villas Uluwatu menanamkan jiwa Bali ke dalam
+                setiap aspek properti. Destinasi menakjubkan untuk ketenangan
+                dan keterasingan—ketenangan pemandangan laut yang masih alami
+                dan keheningan batin yang hadir dengan kemewahan
+                ruang—menginspirasi introspeksi dan penemuan.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/roo8zssd6OI?autoplay=1&mute=1&loopsi=a1SgUkDyFO_pcnjM&amp;start=34"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.359916611327!2d115.1345304750638!3d-8.846043391208186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25add7437e1c1%3A0xb608f145222330a6!2sAlila%20Villas%20Uluwatu!5e0!3m2!1sid!2sid!4v1714236453683!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Capella Ubud <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Terinspirasi oleh pemukim awal Eropa pada tahun 1800an, arsitek
+                ternama Bill Bensley mengonsep Capella Ubud, Bali sebagai
+                penghormatan terhadap semangat petualangan mereka. Terletak di
+                lanskap bertingkat yang dramatis dan terletak di antara hutan
+                hujan lebat, sawah, dan Sungai Wos yang suci, di desa seniman
+                asli Bali bernama Keliki, perkemahan tenda mewah ini adalah
+                tempat perlindungan tersembunyi dari jauh yang benar-benar
+                menangkap imajinasi mereka yang mendambakan pengalaman unik,
+                yang memungkinkan mereka menikmati esensi alam sekitar Ubud yang
+                belum terjamah dalam kenyamanan pribadi dan penuh gaya.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/RQ7pWhh7wAA?autoplay=1&mute=1&loopsi=-saRwuR-OwrlbUu4&amp;start=34"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.525070877326!2d115.26553677505936!3d-8.448209091591801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2232a33674863%3A0x25093ef92f99017c!2sCapella%20Ubud%2C%20Bali!5e0!3m2!1sid!2sid!4v1714237332659!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#home">Enjoy Indonesia</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kemenparekraf?_t=8lssPVuUJim&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Destinasi</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam.html">Alam</a></li>
+            <li><a href="destinasi-belanja.html">Belanja</a></li>
+            <li><a href="destinasi-sejarah.html">Sejarah</a></li>
+            <li><a href="destinasi-hiburan.html">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Kuliner</h3>
+          <ul class="footer__links">
+            <li><a href="makanantradisional.html">Makanan Tradisional</a></li>
+            <li><a href="restoran.html">Restoran dan Cafe</a></li>
+            <li><a href="streetfood.html">Streetfood</a></li>
+            <li><a href="streetfood.html">Bar & Lounge</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Akomodasi</h3>
+          <ul class="footer__links">
+            <li><a href="transportasi.html">Transportasi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

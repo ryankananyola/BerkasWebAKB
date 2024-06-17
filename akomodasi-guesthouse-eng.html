@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinasi.css" />
+    <link rel="stylesheet" href="akomodasi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <header class="header_homepage" id="home">
+      <!-- navigation -->
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="homepage-eng.html">Enjoy Indonesia</a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="dropdown-nav">
+              <a href="destinasi-alam-eng.html" class="dropbtn-eng"
+                >PLACE TO GO</a
+              >
+              <div class="dropdown-content with-image">
+                <a href="destinasi-alam-eng.html">
+                  <img
+                    src="image/pohonfix.png"
+                    alt="Nature Destinations"
+                    class="dropdown-icon"
+                  />
+                  Nature
+                </a>
+                <a href="destinasi-sejarah-eng.html">
+                  <img
+                    src="image/sejarahfix.png"
+                    alt="Historical Destinations"
+                    class="dropdown-icon"
+                  />
+                  History
+                </a>
+                <a href="destinasi-belanja-eng.html">
+                  <img
+                    src="image/belanjafix.png"
+                    alt="Shopping Destinations"
+                    class="dropdown-icon"
+                  />
+                  Shopping
+                </a>
+                <a href="destinasi-hiburan-eng.html">
+                  <img
+                    src="image/hiburanfix.png"
+                    alt="Entertainment Destinations"
+                    class="dropdown-icon"
+                  />
+                  Entertainment
+                </a>
+              </div>
+            </li>
+            <li class="dropdown-nav">
+              <a href="kuliner-tradisional-eng.html" class="dropbtn-eng"
+                >EAT & DRINK</a
+              >
+              <div class="dropdown-content with-image">
+                <a href="kuliner-tradisional-eng.html">
+                  <img
+                    src="image/tradisionalfix.png"
+                    alt="Traditional Foods"
+                    class="dropdown-icon"
+                  />
+                  Traditional Foods
+                </a>
+                <a href="kuliner-restoran-eng.html">
+                  <img
+                    src="image/restoranfix.png"
+                    alt="Restaurants"
+                    class="dropdown-icon"
+                  />
+                  Restaurants
+                </a>
+                <a href="kuliner-streetfood-eng.html">
+                  <img
+                    src="image/streetfoodfix.png"
+                    alt="Street Foods"
+                    class="dropdown-icon"
+                  />
+                  Street Foods
+                </a>
+                <a href="kuliner-bar-eng.html">
+                  <img
+                    src="image/barfix.png"
+                    alt="Bars & Lounges"
+                    class="dropdown-icon"
+                  />
+                  Bars & Lounges
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown-nav">
+              <a href="akomodasi-hotel-eng.html" class="dropbtn-eng"
+                >WAY TO GO</a
+              >
+              <div class="dropdown-content">
+                <a href="akomodasi-hotel-eng.html">Accommodation</a>
+                <!-- Submenu for Accommodation options -->
+                <div class="dropdown-subcontent">
+                  <a href="akomodasi-penthouse-eng.html">
+                    <img
+                      src="image/penthousefix.png"
+                      alt="Penthousefix"
+                      class="dropdown-icon"
+                    />
+                    Penthouse
+                  </a>
+                  <a href="akomodasi-hotel-eng.html">
+                    <img
+                      src="image/hotelfix.png"
+                      alt="Hotelfix"
+                      class="dropdown-icon"
+                    />
+                    Hotel
+                  </a>
+                  <a href="akomodasi-guesthouse-eng.html">
+                    <img
+                      src="image/guesthousefix.png"
+                      alt="Guesthousefix"
+                      class="dropdown-icon"
+                    />
+                    Guesthouse
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation video autoplay loop playsinline-->
+      <video autoplay loop muted playsinline>
+        <source src="image/video-indo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <audio id="video-audio" controls style="display: none">
+        <source src="image/video-indo.mp4" type="audio/mp4" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1 class="section__header__utama">Welcome to Indonesia</h1>
+          <div class="scroll__btn">
+            <a href="#about">
+              Scroll down
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Follow Us</span>
+          <a
+            href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a
+            href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+        </div>
+      </div>
+      <div class="sound-control" id="sound-control">
+        <i
+          class="ri-volume-up-line"
+          id="sound-icon"
+          style="margin-top: -5px"
+        ></i>
+      </div>
+      <div class="language-selector" id="language-selector">
+        <input type="checkbox" id="language-toggle" class="toggle-checkbox" />
+        <label for="language-toggle" class="language-option">
+          <img src="image\eng.png" alt="ID Flag" class="language-flag" />
+          <!-- Gambar ID di sini -->
+          EN <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </label>
+        <div class="language-dropdown">
+          <a href="destinasi-alam.html" class="language-option">
+            <img src="image\id.png" alt="ID Flag" class="language-flag" />
+            ID
+          </a>
+          <a href="destinasi-alam-eng.html" class="language-option">
+            <img src="image\eng.png" alt="EN Flag" class="language-flag" />
+            EN
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="containermelodic">
+      <div id="slidemelodic">
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/guesthouse-turi.png)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Rumah Turi Boutique Hotel, Solo</div>
+            <div class="home__content">
+              <a href="#about5">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/guesthouse-jiwa.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Jiwa Jawa Resort Ijen, Banyuwangi</div>
+            <div class="home__content">
+              <a href="#about1">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/guesthouse-pitaya.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Pondok Pitaya Guest House, Bali</div>
+            <div class="home__content">
+              <a href="#about2">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/guesthouse-kubu.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Kubu Tropis, Bali</div>
+            <div class="home__content">
+              <a href="#about3">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="itemmelodic"
+          style="background-image: url(image/guesthouse-joglo.jpg)"
+        >
+          <div class="contentmelodic">
+            <div class="namemelodic">Joglo Mandapa Boutique Guesthouse</div>
+            <div class="home__content">
+              <a href="#about4">
+                <button>See More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonsmelodic">
+        <button id="prevmelodic"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextmelodic">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <section class="about" id="about1">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Jiwa Jawa Resort Ijen <br />
+                Banyuwangi
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Located between Bondowoso and Banyuwangi Regencies, location we
+                are a bit hidden but inviting. The explorer if you travel a long
+                distance you will be able to see the view beautiful blue fire
+                caldera at dusk and turquoise lake surrounded by walls of sulfur
+                like coral during the day, with a quiet place to rest at night.
+                Because of our presence in the nature and culture of the Ijen
+                plateau, we strive to be environmentally and culturally
+                conscious in one harmonious balance. Proper waste management,
+                policy of not cutting down trees, and minimizing carbon
+                footprint is part of our commitment to preserving the
+                environment. Jiwa Jawa Resort Ijen, where natural beauty and
+                cultural charm combine harmoniously.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ouQMsPGQ3EY?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.273231179505!2d114.25712747505638!3d-8.175205291855905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14e93aaecc04d%3A0x4b1929ba808bfe2d!2sJiwa%20Jawa%20Resort%20Ijen!5e0!3m2!1sid!2sid!4v1715329847007!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about2">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Pondok Pitaya Guest House <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Located in the middle of the beauty of Bali, Indonesia, Pondok
+                Pitaya The hotel offers a peaceful retreat and serene for
+                tourists looking for a peaceful holiday. With its beautiful
+                location and impeccable service, this hotel is the perfect
+                choice for those looking to get away from the hustle and bustle
+                of everyday life.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/WgpqZFdVALU?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.96335723405!2d114.96321117505984!3d-8.502938791538906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22d88f7e06769%3A0x9d805d293f302f69!2sPondok%20Pitaya%3A%20Hotel%2C%20Surfing%20and%20Yoga!5e0!3m2!1sid!2sid!4v1715330440170!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about3">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Kubu Tropis <br />
+                Bali
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Kubu Tropis provides rooms with free Wi-Fi in the Center Ubud
+                City, less than 1 km from Puri Saren Agung. this accommodation
+                is a 12-minute walk from Ubud Market, 1.1 km from The Blanco
+                Renaissance Museum, and 2.6 km from Neka Art Museum. Ubud Monkey
+                Forest is 2.7 km from the property. <br />
+                Rooms at the guest house are equipped with a desk. Every rooms
+                are equipped with air conditioning, and some rooms also have a
+                terrace. In Tropical Kubu, each room is equipped with a seating
+                area.
+                <br />
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/No4YgdbrvbE?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.8871914015067!2d115.25665707506005!3d-8.51033299153172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d13693f25e1%3A0xa06802da3ba5b96f!2sKubu%20Tropis!5e0!3m2!1sid!2sid!4v1715331202139!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about4">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Joglo Mandapa Boutique Guesthouse <br />
+                Malang
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                Mandapa means silence, one with nature and the environment,
+                lingering in the hotel is a high level of privacy, No one
+                understand you except yourself and that place support you, or
+                try traditional Javanese gamelan Music, cooking at the hotel,
+                with traditional cooking classes, and cycling road tour around
+                the hotel to say hello and see people make pottery, carry out
+                activities in the fields and gardens, trying culinary delights,
+                cycling around.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/5OBHo691RJc?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.604556849782!2d110.33588337505265!3d-7.831609192189397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57d117f1173f%3A0x1638df799b666024!2sJoglo%20Mandapa%20Boutique%20Hotel%20%26%20Resto!5e0!3m2!1sid!2sid!4v1715331644011!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="about" id="about5">
+      <div class="about__container container">
+        <div class="about__content">
+          <div class="about__text" id="about1">
+            <div class="heading">
+              <h1>
+                Rumah Turi Boutique Hotel <br />
+                Solo
+              </h1>
+            </div>
+            <div class="text">
+              <p>
+                If you are looking for a unique and environmentally friendly
+                place to stay in Solo, you can visit the Rumah Turi Eco Boutique
+                Hotel. This boutique hotel is the first of its kind in the city
+                and will make its mark You are impressed with its
+                environmentally friendly concept. <br />
+                Located on Jl. Srigading II No. 12 Tourisari Solo. Turi's house
+                easily accessible and its strategic location makes it a base
+                which is comfortable for exploring Solo. You can explore Nearby
+                tourist attractions such as the Radya Pustaka Museum, Keris
+                Museum, Rumah Danar Hadi (batik museum), and Dance Theatre
+                Sriwedari People's Puppet. This hotel is also located near Solo
+                Paragon Mall, which is great for shopping and dining.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Pg1s8SNkGCI?autoplay=1&mute=1&loop=1&controls=2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1245853207743!2d110.80948557504995!3d-7.561392892452543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16903d0fdc77%3A0xe47600a6f08f8f36!2srumah%20Turi!5e0!3m2!1sid!2sid!4v1715329420173!5m2!1sid!2sid"
+          width="1100"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#home">Enjoy Indonesia</a>
+          </div>
+          <span class="sosmed">
+            <a
+              href="https://www.instagram.com/kemenparekraf.ri?igsh=MTF5NW5zYWFndHRlcA=="
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://twitter.com/Kemenparekraf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kemenparekraf?_t=8lssPVuUJim&_r=1"
+              ><i class="ri-tiktok-line"></i
+            ></a>
+          </span>
+        </div>
+        <div class="footer__col">
+          <h3>Place to Go</h3>
+          <ul class="footer__links">
+            <li><a href="destinasi-alam-eng.html">Nature</a></li>
+            <li><a href="destinasi-belanja-eng.html">Shopping</a></li>
+            <li><a href="destinasi-sejarah-eng.html">History</a></li>
+            <li><a href="destinasi-hiburan-eng.html">Entertainment</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Eat & Drink</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="kuliner-tradisional-eng.html">Traditional Foods</a>
+            </li>
+            <li><a href="kuliner-restoran-eng.html">Restaurants</a></li>
+            <li><a href="kuliner-streetfood-eng.html">Street Foods</a></li>
+            <li><a href="kuliner-bar-eng.html">Bars & Lounges</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Way to Go</h3>
+          <ul class="footer__links">
+            <li><a href="akomodasi-hotel-eng.html">Accommodation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AnakeBayu. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="destinasi.js"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
